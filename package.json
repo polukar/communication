@@ -1,11 +1,7 @@
 {
-    "name": "gulp-pug-starter",
-    "description": "Frontend development with pleasure",
-    "author": "Andrey Gorokhov",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/andreyalexeich/gulp-pug-starter.git"
-    },
+    "name": "prod",
+    "description": "",
+    "author": "",
     "license": "GPL-3.0-only",
     "scripts": {
         "dev": "gulp",
@@ -74,7 +70,13 @@
         "yargs": "^17.3.1"
     },
     "dependencies": {
+        "@event-calendar/core": "^0.9.0",
+        "@event-calendar/interaction": "^0.9.0",
+        "@event-calendar/time-grid": "^0.9.0",
+        "air-datepicker": "^3.1.1",
         "dev": "^0.1.3",
+        "simplebar": "^5.3.6",
+        "swiper": "^8.0.7",
         "webpack": "^5.70.0",
         "webpack-stream": "^7.0.0"
     },

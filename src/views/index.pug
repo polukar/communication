@@ -2,11 +2,23 @@ extends layouts/default
 include helpers/mixins
 
 block variables
-	- const title = ""
+	- const title = "communication"
 
 block content
 	include ../blocks/modules/header/header
-	include ../blocks/modules/footer/footer
+	include ../blocks/modules/header/header-second
+	include ../blocks/modules/modals/setting
+	include ../blocks/modules/modals/succed
+	include ../blocks/modules/modals/month
+	include ../blocks/modules/modals/month
+	include ../blocks/modules/modals/event
+	include ../blocks/modules/modals/event-edit
+	include ../blocks/modules/modals/event-stream
+	include ../blocks/modules/modals/event-confirm
+	include ../blocks/modules/modals/event-new
+	include ../blocks/modules/modals/event-group
+	include ../blocks/modules/modals/event-new-group
+	include ../blocks/modules/modals/menu
 
 block scripts
 	script(src="js/vendor.js")

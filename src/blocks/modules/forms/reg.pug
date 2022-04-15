@@ -1,0 +1,12 @@
+form.form
+  .form__wrap.form__wrap--login
+    .form__logo 
+      img(src="./img/login/logo.svg", alt="")
+    h2.h2.form__title Регистрация
+    .inputs
+      +input('Логин', 'text')
+      +input('Пароль', 'password', true, true)
+    .form__enter 
+      p Можете авторизоваться через <a href="" class="link t-gradient">Google</a> или <a href="enter.html" class="link t-gradient">Логин</a>
+      +btn-grdnt-full('Зарегистрироваться')
+

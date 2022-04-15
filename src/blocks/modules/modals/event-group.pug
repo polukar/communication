@@ -1,0 +1,52 @@
+form.modal.modal--event-group.active
+  .modal__bg
+  .modal__panel
+    .modal__close 
+    .form__wrap.form__wrap--full(data-simplebar)
+      .event
+        h2.h2.modal__title Светлые головы
+        .form__block 
+          label.label.label-name
+            .input__name Светлые головы
+            .input
+              input.t-h.t-medium(type="text")
+          label.label.label-name
+            .input__name Организация / пометка
+            .input
+              input.t-h.t-medium(type="text")
+        .form__block 
+          .add-confirm
+            p.t-h.t-medium Участники 
+            .add-confirm__inputs
+              label.label
+                .input
+                  input.t-h.t-medium(type="text" placeholder="Введите email участника команды")
+              +btn-border('Добавить')
+            a.link.t-gradient(href="#") Скопировать ссылку на приглашение
+        .form__block 
+          h3.h3.form__small-title Участники
+          .form__participants
+            .participants__group
+              .participants__group-title Подтвердили
+              label.form__participant
+                .form__participant-user
+                  .form__participant-avatar.form__participant-avatar--green GO
+                  .form__participant-name Константинопольский Константин
+                .form__participant-radio.radio 
+                  input(type="checkbox" name="name_2")
+                  span 
+            .participants__group
+              .participants__group-title Не дали ответ
+              label.form__participant
+                .form__participant-user
+                  .form__participant-avatar.form__participant-avatar--green GO
+                  .form__participant-name Константинопольский Константин
+            .participants__group.disabled
+              .participants__group-title Отклонили
+              label.form__participant
+                .form__participant-user
+                  .form__participant-avatar.form__participant-avatar--green GO
+                  .form__participant-name Константинопольский Константин
+      .form__bottom
+        +btn-grdnt('Сохранить')
+        +btn-border('Отменить')

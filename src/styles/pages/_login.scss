@@ -1,0 +1,26 @@
+.login {
+    height: 100vh;
+    @include flex-h-jc;
+}
+
+.login__wrap {
+    width: calc(100% - 600px);
+    background: url(../img/login/circles-top.svg) no-repeat left top / 120% auto, url(../img/login/circles-bottom.svg) no-repeat left bottom / 80% auto, $gradient;
+    @include flex-cntr;
+}
+
+.login__info {
+    width: 100%;
+}
+
+.login__pic {
+    @include flex-h-cntr;
+    margin-bottom: 20px;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.login--enter .inputs {
+    margin-bottom: 5px;
+}

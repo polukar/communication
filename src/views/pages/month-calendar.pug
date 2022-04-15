@@ -1,0 +1,332 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Месяц список";
+
+block content
+	include ../helpers/mixins
+
+	main.inner-page
+		.inner-headers
+			include ../../blocks/modules/header/header
+			include ../../blocks/modules/header/header-second
+		.inner
+			.container
+				table.month-calendar
+					thead.month-calendar__thead 
+						tr.month-calendar__tr 
+							th.month-calendar__th ПН
+							th.month-calendar__th ВТ
+							th.month-calendar__th СР
+							th.month-calendar__th ЧТ
+							th.month-calendar__th ПТ
+							th.month-calendar__th СБ
+							th.month-calendar__th ВС
+					tbody.month-calendar__tbody 
+						tr.month-calendar__tr 
+							td.month-calendar__td
+								.month-calendar__date 1.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+							td.month-calendar__td
+								.month-calendar__date 2.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+							td.month-calendar__td
+								.month-calendar__date 3.02
+								.month-calendar__empty Никаких событий не запланировано
+							td.month-calendar__td
+								.month-calendar__date 4.02
+								.month-calendar__empty Никаких событий не запланировано
+							td.month-calendar__td
+								.month-calendar__date 5.02
+								.month-calendar__empty Никаких событий не запланировано
+							td.month-calendar__td
+								.month-calendar__date 6.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+							td.month-calendar__td
+								.month-calendar__date 7.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+						tr.month-calendar__tr 
+							td.month-calendar__td
+								.month-calendar__date 1.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+							td.month-calendar__td
+								.month-calendar__date 2.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+							td.month-calendar__td
+								.month-calendar__date 3.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+							td.month-calendar__td
+								.month-calendar__date 4.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+							td.month-calendar__td
+								.month-calendar__date 5.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+							td.month-calendar__td
+								.month-calendar__date 6.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+							td.month-calendar__td
+								.month-calendar__date 7.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+						tr.month-calendar__tr 
+							td.month-calendar__td
+								.month-calendar__date 1.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+							td.month-calendar__td
+								.month-calendar__date 2.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+							td.month-calendar__td
+								.month-calendar__date 3.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+							td.month-calendar__td
+								.month-calendar__date 4.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+							td.month-calendar__td
+								.month-calendar__date 5.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+							td.month-calendar__td
+								.month-calendar__date 6.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+							td.month-calendar__td
+								.month-calendar__date 7.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+						tr.month-calendar__tr 
+							td.month-calendar__td
+								.month-calendar__date 1.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+							td.month-calendar__td
+								.month-calendar__date 2.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+							td.month-calendar__td
+								.month-calendar__date 3.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+							td.month-calendar__td
+								.month-calendar__date 4.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+							td.month-calendar__td
+								.month-calendar__date 5.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+							td.month-calendar__td
+								.month-calendar__date 6.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+							td.month-calendar__td
+								.month-calendar__date 7.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+						tr.month-calendar__tr 
+							td.month-calendar__td
+								.month-calendar__date 1.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+							td.month-calendar__td
+								.month-calendar__date 2.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+							td.month-calendar__td
+								.month-calendar__date 3.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+							td.month-calendar__td
+								.month-calendar__date 4.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+							td.month-calendar__td
+								.month-calendar__date 5.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+							td.month-calendar__td
+								.month-calendar__date 6.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+							td.month-calendar__td
+								.month-calendar__date 7.02
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__panel
+									.month-calendar__time 8:00 - 8:45
+									.month-calendar__room Ком. 1
+								.month-calendar__all.t-gradient Показать все
+
+					
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")

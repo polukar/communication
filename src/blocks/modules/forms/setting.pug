@@ -1,0 +1,46 @@
+form.form.form--full
+  .form-head
+    h2.h2.form__title Настройки
+  .form__wrap.form__wrap--full(data-simplebar)
+    .setting 
+      .user
+        .user__photo
+          .user__photo-text GO
+        .user__info 
+          .user__name
+            .input
+              input.t-h.t-bold(type="text" disabled value="Константиноопльский Константин")
+          .user__email
+            .input
+              input.t-h.t-medium(type="text" disabled value="email@email.com")
+          .user__phone
+            .input
+              input.t-h.t-medium(type="text" disabled value="8 800 000 00 00")
+      .form__block
+        h3.h3.form__small-title Настройки уведомлений
+        .form__panel
+          p.t-h Уведамление на почту
+          +switcher
+        .form__panel
+          p.t-h Уведамление по СМС
+          +switcher
+        .form__panel
+          p.t-h Уведамление по PUSH
+          +switcher
+      .form__block
+        h3.h3.form__small-title Настройки уведомлений
+        .form__panel
+          p.t-h.t-medium Apple calendar
+          +btn-border('Интегрировать')
+        .form__panel
+          p.t-h.t-medium Google calendar
+          +btn-border('Интегрировать')
+      .form__block
+        h3.h3.form__small-title Общие настройкии
+        .form__panel
+          p.t-h Автоматически подтверждать события если время свободно
+          +switcher
+      .form__block 
+        +select('Часовой пояс')
+    .form__bottom
+      +btn-grdnt('Войти')

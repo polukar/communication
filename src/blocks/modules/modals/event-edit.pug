@@ -1,0 +1,109 @@
+form.modal.modal--event-edit
+  .modal__bg
+  .modal__panel
+    .modal__close 
+    .form__wrap.form__wrap--full(data-simplebar)
+      .event
+        h2.h2.modal__title Редактирование события
+        label.label
+          .input
+            input.t-h.t-medium(type="text" value="Название события")
+        label.label
+          .input
+            input.t-h.t-medium(type="text" value="Описание события")
+        label.label
+          .input
+            input.t-h.t-medium(type="text" value="Организация / пометка")
+        .modal__select
+          +select-bottom('Выбререте группу')
+        .form__block 
+          h3.h3.form__small-title Участники
+          .form__participants
+            label.form__participant
+              .form__participant-user
+                .form__participant-avatar.form__participant-avatar--green GO
+                .form__participant-name Константинопольский Константин
+              .form__participant-radio.radio 
+                input(type="checkbox" name="name_2")
+                span 
+            label.form__participant
+              .form__participant-user
+                .form__participant-avatar.form__participant-avatar--green GO
+                .form__participant-name Константинопольский Константин
+              .form__participant-radio.radio 
+                input(type="checkbox" name="name_2")
+                span 
+            label.form__participant
+              .form__participant-user
+                .form__participant-avatar.form__participant-avatar--green GO
+                .form__participant-name Константинопольский Константин
+              .form__participant-radio.radio 
+                input(type="checkbox" name="name_2")
+                span 
+            label.form__participant
+              .form__participant-user
+                .form__participant-avatar.form__participant-avatar--green GO
+                .form__participant-name Константинопольский Константин
+              .form__participant-radio.radio 
+                input(type="checkbox" name="name_2")
+                span 
+            a.participant-all.link.t-gradient Показать все
+        .form__block.form__block-times
+          label.label
+            .label__title.t-m Дата
+            .calendar.input
+              input(type="text" value="28 февраля")
+              .calendar__ico
+                img(src="./img/header/calendar.svg", alt="")
+          label.label
+            .label__title.t-m Продложительность
+            .input.input-time
+              input(type="text" value="45 минут")
+              .input__ico
+                img(src="./img/modals/time.svg", alt="")
+        .form__block 
+          h3.h3.form__small-title Свободные отрезки времени
+          .free-time 
+            .shedule__item 8:00 - 8:45 
+            .shedule__item 9:00 - 9:45
+            .shedule__item 10:00 - 10:45
+            .shedule__item 11:00 - 11:45
+            .shedule__item 12:00 - 12:45
+            .shedule__item 13:00 - 13:45
+            .shedule__item 14:00 - 14:45
+            .shedule__item 15:00 - 15:45
+          .form__block-times
+            label.label
+              .label__title.t-m Начало 
+              .calendar.input
+                input(type="text" value="8:00")
+                .calendar__ico
+                  img(src="./img/modals/time.svg", alt="")
+            label.label
+              .label__title.t-m Конец
+              .input.input-time
+                input(type="text" value="8:45")
+                .input__ico
+                  img(src="./img/modals/time.svg", alt="")
+        .form__block 
+          h3.h3.form__small-title Создать ссылку на собвещание 
+          .form__small-description Cсылка сгенерируется автоматически
+          .link__panel
+            .radios 
+              label.radio.t-h
+                input(type="radio" name="name_3")
+                span 
+                | ZOOM
+              label.radio.t-h
+                input(type="radio" name="name_3")
+                span 
+                | Google meets
+              label.radio.t-h
+                input(type="radio" name="name_3")
+                span 
+                | Skype
+              p.t-grey.t-h или
+            +btn-border('Другой сервис')
+      .form__bottom
+        +btn-grdnt('Сохранить')
+        +btn-border('Отменить')

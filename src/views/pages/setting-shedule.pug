@@ -1,0 +1,135 @@
+extends ../layouts/default
+
+block variables
+	- const title = "Авторизация";
+
+block content
+	include ../helpers/mixins
+
+	main.inner-page(data-simplebar) 
+		.inner-headers
+			include ../../blocks/modules/header/header-reg
+			include ../../blocks/modules/header/header-second-reg
+		.inner
+			.container
+				section.shedule
+					.shedule__left
+						.shedule__list.disabled
+							.shedule__from-to 8:00 - 10:00
+							.shedule__items
+								.shedule__item 8:00
+								.shedule__item 8:15
+								.shedule__item 8:30
+								.shedule__item 8:45
+								.shedule__item 9:00
+								.shedule__item 9:15
+								.shedule__item 9:30
+								.shedule__item 9:45
+								.shedule__item 10:00
+						.shedule__list
+							.shedule__from-to 8:00 - 10:00
+							.shedule__items
+								.shedule__item 8:00
+								.shedule__item 8:15
+								.shedule__item 8:30
+								.shedule__item 8:45
+								.shedule__item 9:00
+								.shedule__item 9:15
+								.shedule__item 9:30
+								.shedule__item 9:45
+								.shedule__item 10:00
+						.shedule__list
+							.shedule__from-to 8:00 - 10:00
+							.shedule__items
+								.shedule__item 8:00
+								.shedule__item 8:15
+								.shedule__item 8:30
+								.shedule__item 8:45
+								.shedule__item 9:00
+								.shedule__item 9:15
+								.shedule__item 9:30
+								.shedule__item 9:45
+								.shedule__item 10:00
+						.shedule__list
+							.shedule__from-to 8:00 - 10:00
+							.shedule__items
+								.shedule__item 8:00
+								.shedule__item 8:15
+								.shedule__item 8:30
+								.shedule__item 8:45
+								.shedule__item 9:00
+								.shedule__item 9:15
+								.shedule__item 9:30
+								.shedule__item 9:45
+								.shedule__item 10:00
+						.shedule__list
+							.shedule__from-to 8:00 - 10:00
+							.shedule__items
+								.shedule__item 8:00
+								.shedule__item 8:15
+								.shedule__item 8:30
+								.shedule__item 8:45
+								.shedule__item 9:00
+								.shedule__item 9:15
+								.shedule__item 9:30
+								.shedule__item 9:45
+								.shedule__item 10:00
+						.shedule__list
+							.shedule__from-to 8:00 - 10:00
+							.shedule__items
+								.shedule__item 8:00
+								.shedule__item 8:15
+								.shedule__item 8:30
+								.shedule__item 8:45
+								.shedule__item 9:00
+								.shedule__item 9:15
+								.shedule__item 9:30
+								.shedule__item 9:45
+								.shedule__item 10:00
+						.shedule__list
+							.shedule__from-to 8:00 - 10:00
+							.shedule__items
+								.shedule__item 8:00
+								.shedule__item 8:15
+								.shedule__item 8:30
+								.shedule__item 8:45
+								.shedule__item 9:00
+								.shedule__item 9:15
+								.shedule__item 9:30
+								.shedule__item 9:45
+								.shedule__item 10:00
+						.shedule__list
+							.shedule__from-to 8:00 - 10:00
+							.shedule__items
+								.shedule__item 8:00
+								.shedule__item 8:15
+								.shedule__item 8:30
+								.shedule__item 8:45
+								.shedule__item 9:00
+								.shedule__item 9:15
+								.shedule__item 9:30
+								.shedule__item 9:45
+								.shedule__item 10:00
+						.shedule__list
+							.shedule__from-to 8:00 - 10:00
+							.shedule__items
+								.shedule__item 8:00
+								.shedule__item 8:15
+								.shedule__item 8:30
+								.shedule__item 8:45
+								.shedule__item 9:00
+								.shedule__item 9:15
+								.shedule__item 9:30
+								.shedule__item 9:45
+								.shedule__item 10:00
+					form.shedule__right 
+						.shedule__banner 
+							.shedule__banner-pic 
+								img(src="./img/shedule/shedule-banner.svg", alt="")
+							.shedule__banner-text Отметьте время в которое вы готовы созвониться 
+						.calendar-static
+						.shedule__btns 
+							+btn-grdnt('Создать заявку')
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")

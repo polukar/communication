@@ -1,0 +1,47 @@
+.inputs {
+    margin-bottom: 40px;
+}
+
+.label {
+    @include border-line;
+    display: block;
+    margin-bottom: 30px;
+    padding-bottom: 8px;
+    position: relative;
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+.label__title {
+    color: $time;
+}
+
+.input {
+    position: relative;
+    input {
+        width: 100%;
+        height: 32px;
+        border: none;
+        &:focus-visible {
+            outline: 0;
+            outline-offset: 0;
+        }
+    }
+}
+
+.input__watchpassword {
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    svg {
+        width: 18px;
+        height: 14px;
+    }
+}
+
+.input__title {
+    color: $time;
+}

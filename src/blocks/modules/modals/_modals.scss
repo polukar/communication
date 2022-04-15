@@ -1,0 +1,341 @@
+.modal {
+    position: fixed;
+    left: 0;
+    top: 60px;
+    height: calc(100% - 60px);
+    width: 100%;
+    display: none;
+    z-index: 300;
+    &.active {
+        display: block;
+    }
+}
+
+.modal__panel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    padding-top: 50px;
+    padding-left: 30px;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 30;
+    padding-right: 10px;
+}
+
+.modal__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: #000;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.modal__close {
+    position: absolute;
+    right: 22px;
+    top: 22px;
+    width: 15px;
+    height: 15px;
+    background: url(../img/modals/close.svg) no-repeat center / contain;
+    cursor: pointer;
+    z-index: 50;
+}
+
+.user__work {
+    width: 100%;
+    padding-top: 25px;
+}
+
+.link__panel {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.public__btn {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 12px;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(-90.3deg, #FFFFFF 60.5%, rgba(255, 255, 255, 0) 99.74%);
+    ;
+}
+
+.link__panel {
+    padding-top: 22px;
+}
+
+.modal--succed {
+    .modal__panel {
+        padding-top: 0px;
+        @include flex-cntr;
+    }
+}
+
+.modal--month {
+    .month-list__item {
+        width: 100%;
+        margin-right: 0px;
+    }
+}
+
+.modal__title {
+    margin-bottom: 20px;
+}
+
+.modal__month-list {
+    padding-left: 2px;
+}
+
+.event__date-time {
+    color: $time;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.modal__descroption-all {
+    margin-bottom: 40px;
+}
+
+.participant__radio {
+    position: relative;
+}
+
+.form__participants {
+    padding-top: 20px;
+}
+
+.form__participant {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.form__participant-user {
+    display: flex;
+    align-items: center;
+}
+
+.form__participant-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    margin-right: 10px;
+    @include flex-cntr;
+    font-weight: 700;
+    color: #fff;
+    &--green {
+        background-color: $green;
+    }
+}
+
+.form__participant-name {
+    font-size: 14px;
+}
+
+.radio.form__participant-radio {
+    width: 20px;
+    height: 20px;
+    input:cheked+span {
+        border-color: #6A3093;
+    }
+    span {
+        display: block;
+        right: 0;
+        left: auto;
+        position: relative;
+        width: 20px;
+        height: 20px;
+        &:after {
+            left: -1px;
+            top: -1px;
+            width: calc(100% + 2px);
+            height: calc(100% + 2px);
+            background: url(../img/modals/check.svg) no-repeat center / 11px auto, $purple;
+        }
+    }
+}
+
+.modal__descroption {
+    p {
+        height: 72px;
+        overflow: hidden;
+        margin-bottom: 15px;
+    }
+}
+
+.modal__select {
+    margin-bottom: 20px;
+}
+
+.label .calendar {
+    border-bottom: none;
+    padding-bottom: 0px;
+}
+
+.form__block-times {
+    @include flex-h-jc;
+    .label {
+        width: calc(50% - 10px);
+        margin-bottom: 0px;
+    }
+}
+
+.input__ico {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-time {
+    position: relative;
+    font-size: 14px;
+    .input {
+        margin-bottom: 0px;
+    }
+    input {
+        font-weight: 500;
+    }
+}
+
+.free-time {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    padding-top: 15px;
+    padding-left: 1px;
+    .shedule__item {
+        width: calc(25% - 10px);
+        margin-right: 10px;
+        margin-bottom: 10px;
+        &:last-child {
+            margin-right: 10px;
+        }
+    }
+}
+
+.radios {
+    display: flex;
+    align-items: center;
+    .radio {
+        margin-right: 25px;
+    }
+}
+
+.form__small-description {
+    padding-top: 7px;
+    color: $time;
+}
+
+.stream__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stream-time {
+    position: relative;
+    padding-left: 25px;
+    height: 18px;
+    line-height: 20px;
+    font-weight: 600;
+    color: $red;
+    transform: translateY(-3px);
+    &:after,
+    &:before {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+    }
+    &:after {
+        left: 0;
+        width: 18px;
+        height: 18px;
+        top: 0;
+        border: 1px solid $red;
+    }
+    &:before {
+        width: 8px;
+        height: 8px;
+        background-color: $red;
+        left: 6px;
+        top: 6px;
+    }
+}
+
+.form__block-items {
+    display: flex;
+    justify-content: space-between;
+    .label {
+        width: calc(50% - 10px);
+        margin-bottom: 25px;
+    }
+}
+
+.label-name {
+    display: flex;
+    .input__name {
+        margin-right: 5px;
+        font-size: 14px;
+        color: $text;
+        white-space: nowrap;
+        display: inline-flex;
+        align-items: center;
+        span {
+            color: $red;
+        }
+    }
+    .input {
+        flex-grow: 1;
+    }
+}
+
+.add-confirm {
+    p {
+        margin-bottom: 10px;
+    }
+}
+
+.add-confirm__inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    .label {
+        width: calc(100% - 120px);
+        margin-bottom: 0px;
+    }
+    .btn {
+        width: 102px;
+        height: 32px;
+        font-size: 12px;
+        padding-left: 0px;
+        padding-right: 0px;
+        min-width: 0;
+    }
+}
+
+.participants__group {
+    margin-bottom: 30px;
+    .disabled {
+        .form__participant {
+            opacity: .4;
+        }
+    }
+}
+
+.participants__group-title {
+    color: #8E8E8E;
+    margin-bottom: 15px;
+}

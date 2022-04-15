@@ -2,13 +2,18 @@
 @import "helpers/variables";
 @import "helpers/mixins";
 @import "helpers/functions";
-
 // CSS-файлы библиотек
 @import "vendor/libs";
-
 // Основное
 @import "base/fonts";
 @import "base/general";
-
+// Компоненты
+@import "../blocks/components/components";
 // БЭМ-блоки
 @import "../blocks/modules/modules";
+// Страницы
+@import "pages/login";
+@import "pages/shedule";
+@import "pages/calendars";
+// mobile
+@import "pages/mobile";

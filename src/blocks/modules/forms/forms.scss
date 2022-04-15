@@ -1,0 +1,180 @@
+.form {
+    @include flex-cntr;
+    @include shadow;
+    width: 600px;
+    padding: 30px;
+}
+
+.form__wrap {
+    width: 100%;
+}
+
+.form__wrap--login {
+    max-width: 330px;
+}
+
+.form__logo {
+    @include flex-h-cntr;
+    margin-bottom: 14px;
+}
+
+.form__title {
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-bottom: 43px;
+    margin-top: -30px;
+}
+
+.form__enter {
+    p {
+        color: #AEAEAE;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    .link {
+        font-weight: 600;
+    }
+}
+
+.form__title-text {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.form__wrap--login {
+    .form__title {
+        margin-bottom: 10px;
+    }
+}
+
+.form__wrap--full {
+    height: 100%;
+    padding: {
+        right: 42px;
+        bottom: 108px;
+    }
+    ;
+}
+
+.simplebar-content {
+    padding: 0;
+}
+
+.form--full {
+    padding-top: 84px;
+    padding-right: 10px;
+    padding-left: 30px;
+    padding: {
+        top: 84px;
+        right: 10px;
+        left: 30px;
+        bottom: 0;
+    }
+    ;
+}
+
+.form-head {
+    @include flex-v-cntr;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 84px;
+    padding-left: 31px;
+    padding-right: 31px;
+    z-index: 200;
+    background-color: #fff;
+    width: 600px;
+    .form__title {
+        margin-bottom: 0px;
+    }
+}
+
+.user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.user__photo {
+    width: 120px;
+    height: 120px;
+    margin-right: 17px;
+    border-radius: 50%;
+    background-color: $green;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: #fff;
+    @include flex-cntr;
+    align-self: flex-start;
+}
+
+.user__info {
+    width: calc(100% - 137px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    input {
+        @include border-line;
+        padding-bottom: 15px;
+        &:disabled {
+            background-color: transparent;
+            color: $text;
+        }
+    }
+}
+
+.user__name {
+    width: 100%;
+    margin-bottom: 26px;
+}
+
+.user__email,
+.user__phone {
+    width: calc(50% - 4px);
+}
+
+.user__email input:disabled {
+    color: rgba($text, .4);
+}
+
+.form__panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include border-line;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.form__block {
+    margin-bottom: 40px;
+}
+
+.form__bottom {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 132px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 30px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 76.52%);
+    z-index: 200;
+    width: 580px;
+    right: 17px;
+    .btn {
+        margin-right: 10px;
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}

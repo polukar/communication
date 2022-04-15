@@ -1,0 +1,9 @@
+mixin input(title, type, passwordIco)
+  label.label
+    .label__title.t-m=title
+    .input
+      input.t-h.t-medium(type=type)
+      if passwordIco
+        .input__watchpassword
+          svg
+            use(xlink:href="img/sprites/sprite.svg#watch")

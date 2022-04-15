@@ -1,0 +1,73 @@
+.select {
+    width: 100%;
+    position: relative;
+    padding-bottom: 8px;
+    @include border-line;
+    &__main {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        position: relative;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        position: relative;
+        cursor: pointer;
+        &.active:after {
+            transform: translateY(-50%) rotateZ(180deg);
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%) rotateZ(0);
+            width: 12px;
+            height: 12px;
+            background: url(../img/login/drop-arrow.svg) no-repeat center/ contain;
+            transition: .4s;
+        }
+    }
+    &__drop {
+        position: absolute;
+        left: 0;
+        width: calc(100% - 4px);
+        left: 2px;
+        padding: 20px;
+        top: 100%;
+        margin-top: 3px;
+        max-height: 200px;
+        z-index: 200;
+        display: none;
+        [select-top] & {
+            top: auto;
+            bottom: 100%;
+            margin-bottom: 5px;
+            margin-top: 0px;
+        }
+        .simplebar-track.simplebar-vertical {
+            height: calc(100% - 20px);
+            top: 10px;
+            right: 5px;
+        }
+        .active~& {
+            display: block;
+        }
+    }
+    &__item {
+        font-size: 14px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: .4s;
+        &.active {
+            display: none;
+        }
+        &:hover {
+            color: $purple;
+        }
+    }
+    &__name {
+        font-weight: 400;
+        color: $time;
+        margin-bottom: 7px;
+    }
+}

@@ -1,0 +1,29 @@
+mixin select(name)
+  //- select-top овечает за переос дропа на вверх 
+  .select(select-top) 
+    .select__name=name
+    input(type="hidden" value="(UTC +03:00) Москва, Санкт-Петербург")
+    .select__main (UTC +03:00) Москва, Санкт-Петербург
+    .select__drop.panel(data-simplebar)
+      .select__item.active (UTC +03:00) Москва, Санкт-Петербург
+      .select__item 1asfasfasf
+      .select__item 1asfasfasf
+      .select__item 1asdasd
+      .select__item 1
+      .select__item 1asdasd
+      .select__item 1asdasd
+      .select__item 1asdasdasd
+mixin select-bottom(name)
+  .select 
+    .select__name=name
+    input(type="hidden" value="(UTC +03:00) Москва, Санкт-Петербург")
+    .select__main (UTC +03:00) Москва, Санкт-Петербург
+    .select__drop.panel(data-simplebar)
+      .select__item.active (UTC +03:00) Москва, Санкт-Петербург
+      .select__item 1asfasfasf
+      .select__item 1asfasfasf
+      .select__item 1asdasd
+      .select__item 1
+      .select__item 1asdasd
+      .select__item 1asdasd
+      .select__item 1asdasdasd

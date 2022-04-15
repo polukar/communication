@@ -1,0 +1,43 @@
+.header-second
+  .container.header__container
+    .header-second__nav 
+      a.header-second__nav-link.active(href="#") Моё расписание 
+      a.header-second__nav-link(href="#") 
+        | На согласовании
+        .header-second__nav-numbers 12
+    .header-second__right 
+      label.calendar.input
+        input(type="text" value="28 февраля")
+        .calendar__ico
+          img(src="./img/header/calendar.svg", alt="")
+      .header__tabs 
+        a.header__tab.active(href="#")  День
+        a.header__tab.header__tab--center(href="#")  Неделя
+        a.header__tab(href="#")  Месяц
+      .header__list
+        a.header__item.active(href="#") 
+          svg
+            use(xlink:href="img/sprites/sprite.svg#list")
+        a.header__item(href="#") 
+          svg
+            use(xlink:href="img/sprites/sprite.svg#calendar")
+      button.header__create.btn.btn--gradient
+        svg 
+          use(xlink:href="img/sprites/sprite.svg#plus")
+        | Создать
+      button.header__link 
+        svg 
+          use(xlink:href="img/sprites/sprite.svg#link")
+.header-second__mobile 
+  label.calendar.input
+    input(type="text" value="28 февраля")
+    .calendar__ico
+      img(src="./img/header/calendar.svg", alt="")
+  .header-second__mobile-bottom
+    button.header__link 
+      svg 
+        use(xlink:href="img/sprites/sprite.svg#link")
+    button.header__create.btn.btn--gradient
+          svg 
+            use(xlink:href="img/sprites/sprite.svg#plus")
+          | Создать

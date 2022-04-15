@@ -1,0 +1,371 @@
+.header {
+    background-color: #fff;
+    border: 1px solid #EEEEEE;
+    margin-bottom: 27px;
+    z-index: 100;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav.nav {
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+}
+
+.nav__link {
+    font-weight: 500;
+    color: $text;
+    text-decoration: none;
+    margin-right: 27px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    &:last-child {
+        margin-right: 0px;
+    }
+    &.active {
+        font-weight: 600;
+        @include border-small;
+    }
+}
+
+.header__user {
+    display: flex;
+    align-items: center;
+}
+
+.header__name {
+    margin-right: 10px;
+}
+
+.header__photo {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.header-second {
+    margin-top: -27px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+}
+
+.header-second__right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: calc(100% - 400px);
+}
+
+.header-second__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-second__nav-link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    position: relative;
+    color: $dark-grey;
+    margin-right: 30px;
+    height: 78px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    &.active {
+        font-weight: 700;
+        @include border-small;
+        color: $text;
+    }
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.header-second__nav-numbers {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 19px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background: $gradient;
+    color: #fff;
+    font-weight: 600;
+    left: 100%;
+    top: 15px;
+    border-radius: 50px;
+    font-size: 12px;
+}
+
+.calendar {
+    width: 100%;
+    max-width: 220px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    position: relative;
+    @include border-line;
+    margin-right: 20px;
+    input {
+        font-weight: 500;
+    }
+}
+
+.calendar__ico {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header__item {
+    svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.header__tabs {
+    background-color: $bg;
+    display: flex;
+    padding: 2px;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+
+.header__tab {
+    height: 34px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $time;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    &.active {
+        background: $gradient;
+        color: #fff;
+        font-weight: 600;
+    }
+}
+
+.header__tab--center {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.header__list {
+    background-color: $bg;
+    display: flex;
+    padding: 3px;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+
+.header__item {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    @include flex-cntr;
+    cursor: pointer;
+    svg {
+        fill: $time;
+    }
+    &.active {
+        background: $gradient;
+        svg {
+            fill: #fff;
+        }
+    }
+}
+
+.header__create {
+    margin-right: 10px;
+    svg {
+        width: 22px;
+        height: 22px;
+        margin-right: 7px;
+    }
+}
+
+.header__link {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: $gradient;
+    @include flex-cntr;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: block;
+    svg {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+.header-reg {
+    .container {
+        height: 60px;
+    }
+}
+
+.header-second-reg {
+    .header__container {
+        height: 78px;
+    }
+    .header__photo {
+        width: 46px;
+        height: 46px;
+        margin-right: 15px;
+        img {
+            width: 100%;
+        }
+    }
+    .header__name {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 700;
+    }
+}
+
+.header__burger {
+    display: none;
+}
+
+.mobile-nav {
+    width: calc(100% + 28px);
+}
+
+.mobile-nav__link {
+    padding: 18px 21px;
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    display: block;
+    color: $text;
+    text-decoration: none;
+    border-bottom: 1px solid #eeeeee;
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 3px;
+        background: $gradient;
+        opacity: 0;
+    }
+    &.active {
+        font-weight: 600;
+        background-color: #eee;
+        &:after {
+            opacity: 1;
+        }
+    }
+}
+
+.mobile-header {
+    height: 100px;
+    background: $gradient;
+    margin-bottom: 50px;
+    position: relative;
+    width: calc(100% + 44px);
+    margin-left: -36px;
+}
+
+.mobile-header__info {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.mobile-header__avatar {
+    position: relative;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border: 3px solid #fff;
+    margin-right: 15px;
+    img {
+        width: 100%;
+        border-radius: 50%;
+    }
+}
+
+.avavatr__edit {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.mobile-header__name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.modal--menu {
+    .modal__panel {
+        padding-top: 0px;
+    }
+    .modal__close {
+        background-image: url(../img/modals/close-white.svg);
+    }
+}
+
+.header-second__mobile {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+    z-index: 100;
+    display: none;
+    .calendar {
+        width: 100%;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+}
+
+.header-second__mobile-bottom {
+    display: flex;
+    .header__link {
+        width: 38px;
+        height: 38px;
+        margin-right: 10px;
+    }
+    .header__create {
+        height: 38px;
+        font-size: 12px;
+        width: calc(100% - 48px);
+        margin-right: 0px;
+    }
+}

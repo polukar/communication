@@ -1,0 +1,67 @@
+form.modal.modal--event-new
+  .modal__bg
+  .modal__panel
+    .modal__close 
+    .form__wrap.form__wrap--full(data-simplebar)
+      .event
+        h2.h2.modal__title Новое событие
+        .form__block-items
+          label.label.label-name
+            .input__name Имя <span>*</span>
+            .input
+              input.t-h.t-medium(type="text")
+          label.label.label-name
+            .input__name Фамилия <span>*</span>
+            .input
+              input.t-h.t-medium(type="text")
+        label.label.label-name
+          .input__name Email <span>*</span>
+          .input
+            input.t-h.t-medium(type="text")
+        label.label.label-name
+          .input__name Должность / место работы
+          .input
+            input.t-h.t-medium(type="text")
+        label.label.label-name
+          .input__name Название события <span>*</span>
+          .input
+            input.t-h.t-medium(type="text")
+        label.label.label-name
+          .input__name Описание события <span>*</span>
+          .input
+            input.t-h.t-medium(type="text")
+        .form__block.form__block-times
+          label.label
+            .label__title.t-m Дата
+            .calendar.input
+              input(type="text" value="28 февраля")
+              .calendar__ico
+                img(src="./img/header/calendar.svg", alt="")
+          label.label
+            .label__title.t-m Продложительность
+            .input.input-time
+              input(type="text" value="45 минут")
+              .input__ico
+                img(src="./img/modals/time.svg", alt="")
+        .form__block 
+          h3.h3.form__small-title Создать ссылку на собвещание 
+          .form__small-description Cсылка сгенерируется автоматически
+          .link__panel
+            .radios 
+              label.radio.t-h
+                input(type="radio" name="name_3")
+                span 
+                | ZOOM
+              label.radio.t-h
+                input(type="radio" name="name_3")
+                span 
+                | Google meets
+              label.radio.t-h
+                input(type="radio" name="name_3")
+                span 
+                | Skype
+              p.t-grey.t-h или
+            +btn-border('Другой сервис')
+      .form__bottom
+        +btn-grdnt('Отправить заявку')
+        +btn-border('Отменить')

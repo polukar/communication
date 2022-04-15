@@ -1,0 +1,205 @@
+.month-calendar {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.month-calendar__th {
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: $time;
+}
+
+.month-calendar__all {
+    font-weight: 600;
+}
+
+.month-calendar__td {
+    padding: 10px 15px 23px;
+    border: 1px dashed #D6D6D6;
+    vertical-align: top;
+}
+
+.month-calendar__empty {
+    padding-top: 28px;
+    text-align: center;
+    font-weight: 500;
+    color: $time;
+}
+
+.month-calendar__date {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 10px;
+}
+
+.month-calendar__panel {
+    background-color: #fff;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.month-calendar__room {
+    color: $dark-grey;
+}
+
+.month-calendar__all {
+    padding-top: 10px;
+}
+
+.month-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -20px;
+}
+
+.month-list__item {
+    width: calc(33.33% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.ec-event {
+    position: relative;
+}
+
+.ec-event-title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.month-list__item-full {
+    margin-right: 0px;
+    width: 100%;
+    color: #222;
+    padding: 0px;
+    background-color: transparent;
+    box-shadow: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 547px;
+    z-index: 50;
+    padding-bottom: 35px;
+    .ec-event-time {
+        display: block;
+    }
+    .participants {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.day {
+    .ec-event {
+        max-width: 547px;
+    }
+}
+
+.ec-event-time {
+    display: none;
+}
+
+.month-list__head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+
+.month-list__cabinet {
+    color: $dark-grey;
+}
+
+.month-list__description {
+    font-weight: 500;
+    margin-bottom: 10px;
+    max-width: 400px;
+}
+
+.participants {
+    display: flex;
+}
+
+.participant {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    @include flex-cntr;
+    font-size: 10px;
+    font-weight: 700;
+    margin-left: -5px;
+    color: #fff;
+    &:first-child {
+        margin-left: 0px;
+    }
+    &--orange {
+        background-color: $orange;
+    }
+    &--blue {
+        background-color: $blue;
+    }
+    &--purple {
+        background-color: $purple;
+    }
+    &--yellow {
+        background-color: $yellow;
+    }
+    &--green {
+        background-color: $green;
+    }
+}
+
+.ec-toolbar {
+    display: none;
+}
+
+.ec-header,
+.ec-body,
+.ec-days,
+.ec-day {
+    border: none;
+}
+
+.ec-day,
+.ec-time {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #AEAEAE;
+    text-transform: capitalize;
+}
+
+.ec-time {
+    top: -8px;
+}
+
+.ec-day.ec-today {
+    background: rgba(#EB5757, .1);
+    border-radius: 10px;
+}
+
+.day__title {
+    span {
+        font-size: 18px;
+        color: $dark-grey;
+    }
+}
+
+.day,
+.week {
+    padding-right: 50px;
+}

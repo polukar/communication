@@ -1,0 +1,35 @@
+.slider {
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+}
+
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    border-radius: 100px;
+    background-color: #fff;
+    opacity: .5;
+    margin-right: 3px;
+    transition: opacity .3s, width .3s;
+    &-active {
+        opacity: 1;
+        width: 14px;
+    }
+}
+
+.slider__title {
+    max-width: 370px;
+    margin: 0 auto 20px;
+}
+
+.slider__text {
+    max-width: 370px;
+    margin: 0 auto;
+}

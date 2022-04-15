@@ -1,0 +1,221 @@
+.shedule {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shedule__left {
+    width: calc(100% - 330px);
+    max-width: 944px;
+}
+
+.shedule__right {
+    width: 320px;
+}
+
+.shedule__list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    &.disabled {
+        opacity: .4;
+        .shedule__item {
+            cursor: default;
+        }
+    }
+    &:not(.disabled) {
+        .shedule__item.active {
+            background: $gradient;
+            color: #fff;
+        }
+    }
+}
+
+.shedule__from-to {
+    width: 100px;
+    font-weight: 500;
+}
+
+.shedule__items {
+    width: calc(100% - 100px);
+    display: flex;
+}
+
+.free-time .shedule__item.active {
+    background: $gradient;
+    color: #fff;
+}
+
+.shedule__item {
+    flex-grow: 1;
+    height: 43px;
+    @include flex-cntr;
+    background: #fff;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: .4s;
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.shedule__banner {
+    height: 230px;
+    background-color: #5151F9;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.shedule__banner-pic {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+}
+
+.shedule__banner-text {
+    max-width: 230px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    padding-left: 20px;
+}
+
+.air-datepicker.-inline- {
+    width: calc(100% - 1px);
+}
+
+.calendar-static {
+    margin-bottom: 30px;
+}
+
+.shedule__radios {
+    margin-bottom: 45px;
+    .h3 {
+        margin-bottom: 15px;
+    }
+}
+
+.radio {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    white-space: nowrap;
+    cursor: pointer;
+    input {
+        display: none;
+    }
+    input:checked+span {
+        border-color: $purple;
+        &:after {
+            opacity: 1;
+        }
+    }
+    span {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 1px solid #D6D6D6;
+        transition: .4s;
+        position: absolute;
+        left: 0;
+        &:after {
+            content: "";
+            width: 9px;
+            height: 9px;
+            position: absolute;
+            left: 2px;
+            top: 2px;
+            background: $gradient;
+            opacity: 0;
+            transition: .4s;
+            border-radius: 50%;
+        }
+    }
+}
+
+.radios-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shedule__btns {
+    display: flex;
+    justify-content: space-between;
+    .btn {
+        width: calc(50% - 5px);
+    }
+    .btn--border:before {
+        background-color: $bg;
+    }
+}
+
+.air-datepicker-nav {
+    border: none;
+    position: relative;
+}
+
+.air-datepicker {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.07);
+    position: relative;
+}
+
+.air-datepicker-nav--title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    i {
+        color: $text;
+    }
+}
+
+.air-datepicker-nav--action[data-action="prev"] {
+    position: absolute;
+    right: 20px;
+    left: auto;
+}
+
+.air-datepicker-nav--action[data-action="next"] {
+    position: absolute;
+    right: 0;
+    left: auto;
+}
+
+.air-datepicker-nav--action path {
+    stroke: #6A3093;
+}
+
+.air-datepicker-body--day-names {
+    display: none;
+}
+
+.air-datepicker-cell.-selected-,
+.air-datepicker-cell.-focus-,
+.air-datepicker-cell.-focus-.-selected- {
+    background: $gradient;
+    color: #fff;
+}
+
+.air-datepicker-cell.-selected- .air-datepicker-cell.-current- {
+    color: #ad67df;
+}
+
+.air-datepicker-cell.-focus-.-current- {
+    color: #fff;
+}
+
+.-day- {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $dark-grey;
+}

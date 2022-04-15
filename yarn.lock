@@ -1397,6 +1397,64 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@event-calendar/common@npm:~0.9.0":
+  version: 0.9.0
+  resolution: "@event-calendar/common@npm:0.9.0"
+  dependencies:
+    svelte: ^3.46.6
+  checksum: 82a74078409f66d5239140789affe13fce78e60ab10d653c92a10af7dd00edfa39b14e1a5fef64bddbf3bef47b0d1177bb38f14515e9008e74f2504a4f83912d
+  languageName: node
+  linkType: hard
+
+"@event-calendar/core@npm:^0.9.0":
+  version: 0.9.0
+  resolution: "@event-calendar/core@npm:0.9.0"
+  dependencies:
+    "@event-calendar/common": ~0.9.0
+    svelte: ^3.46.6
+  checksum: ab8d13852a7a8e88d530dc095a4b75630f526a973aefa698b8f113b277a7ed261384b8e08051bfdc3a2f73c76e6a1f9196b6db2549d761e5467925120617482e
+  languageName: node
+  linkType: hard
+
+"@event-calendar/interaction@npm:^0.9.0":
+  version: 0.9.0
+  resolution: "@event-calendar/interaction@npm:0.9.0"
+  dependencies:
+    "@event-calendar/common": ~0.9.0
+    svelte: ^3.46.6
+  checksum: 7621824d7a4d8028301312c5417e341d86ec23df5b6bd43ba962c2a324b60bf36d5c4d9c9d7f5cb5872ec00785fe4eb4050fbadf3c2c266177f21be1e16cbc88
+  languageName: node
+  linkType: hard
+
+"@event-calendar/time-grid@npm:^0.9.0":
+  version: 0.9.0
+  resolution: "@event-calendar/time-grid@npm:0.9.0"
+  dependencies:
+    "@event-calendar/common": ~0.9.0
+    svelte: ^3.46.6
+  checksum: 26797664536959e1cec6479c7c1ef700068568df04df9e6c749f061a1f66f4b19c5e7fc0a7dc345094b0d99376f260a79598895749dcb915f2be05f325355671
+  languageName: node
+  linkType: hard
+
+"@fullcalendar/common@npm:~5.11.0":
+  version: 5.11.0
+  resolution: "@fullcalendar/common@npm:5.11.0"
+  dependencies:
+    tslib: ^2.1.0
+  checksum: 1bda749a433ec7d90f5f3438b205045652aec1ef7face62d490a3f76dfb5070c2e0831e14f3512bcce85ee1bdb758d8ef98d376f1368a49242621e46d293a5bd
+  languageName: node
+  linkType: hard
+
+"@fullcalendar/interaction@npm:^5.11.0":
+  version: 5.11.0
+  resolution: "@fullcalendar/interaction@npm:5.11.0"
+  dependencies:
+    "@fullcalendar/common": ~5.11.0
+    tslib: ^2.1.0
+  checksum: 625eb7ea331e56bb4539d4c2105c189342a9dca3d236f75a5a9ae2884595d480fb225444ff9feb1386cda07cbc92695c606921495922179b9f85b37877665db5
+  languageName: node
+  linkType: hard
+
 "@gar/promisify@npm:^1.1.3":
   version: 1.1.3
   resolution: "@gar/promisify@npm:1.1.3"
@@ -1890,6 +1948,13 @@ __metadata:
     "@jridgewell/resolve-uri": ^3.0.3
     "@jridgewell/sourcemap-codec": ^1.4.10
   checksum: ab8bce84bbbc8c34f3ba8325ed926f8f2d3098983c10442a80c55764c4eb6e47d5b92d8ff20a0dd868c3e76a3535651fd8a0138182c290dbfc8396195685c37b
+  languageName: node
+  linkType: hard
+
+"@juggle/resize-observer@npm:^3.3.1":
+  version: 3.3.1
+  resolution: "@juggle/resize-observer@npm:3.3.1"
+  checksum: ddabc4044276a2cb57d469c4917206c7e39f2463aa8e3430e33e4eda554412afe29c22afa40e6708b49dad5d56768dc83acd68a704b1dcd49a0906bb96b991b2
   languageName: node
   linkType: hard
 
@@ -2426,6 +2491,13 @@ __metadata:
     clean-stack: ^2.0.0
     indent-string: ^4.0.0
   checksum: 1101a33f21baa27a2fa8e04b698271e64616b886795fd43c31068c07533c7b3facfcaf4e9e0cab3624bd88f729a592f1c901a1a229c9e490eafce411a8644b79
+  languageName: node
+  linkType: hard
+
+"air-datepicker@npm:^3.1.1":
+  version: 3.1.1
+  resolution: "air-datepicker@npm:3.1.1"
+  checksum: 6e7ee05688328a6c0f13d2496bdb7d523772617d3e96e7c4dc9439caa18a87f4a2e2c86cf9b9753f089c13f83f7981f3a980d7eaac021b4986e685946193572d
   languageName: node
   linkType: hard
 
@@ -3811,6 +3883,13 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
+"can-use-dom@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "can-use-dom@npm:0.1.0"
+  checksum: 488fc94c40f2fcce46ebd41abf17ef0449acf0d6b145116036cd592a8e977e5729918d4b3b7c642ce7b1f5b83d330ade39a172cf6b6ef91093785991a868b308
+  languageName: node
+  linkType: hard
+
 "caniuse-lite@npm:^1.0.30001317":
   version: 1.0.30001325
   resolution: "caniuse-lite@npm:1.0.30001325"
@@ -4488,6 +4567,13 @@ bem-tools-create@bem-tools/bem-tools-create:
   version: 2.6.12
   resolution: "core-js@npm:2.6.12"
   checksum: 44fa9934a85f8c78d61e0c8b7b22436330471ffe59ec5076fe7f324d6e8cf7f824b14b1c81ca73608b13bdb0fef035bd820989bf059767ad6fa13123bb8bd016
+  languageName: node
+  linkType: hard
+
+"core-js@npm:^3.0.1":
+  version: 3.21.1
+  resolution: "core-js@npm:3.21.1"
+  checksum: d68eddd831340ad5b24ac29c72fda022a43b17f194c4278b6b875a843283d316502cb4abd07f28631d6ebc4387f66aa06e2b1b3c8fd7e08096a751b5c63f6889
   languageName: node
   linkType: hard
 
@@ -5202,6 +5288,15 @@ bem-tools-create@bem-tools/bem-tools-create:
   version: 0.1.2
   resolution: "dom-walk@npm:0.1.2"
   checksum: 19eb0ce9c6de39d5e231530685248545d9cd2bd97b2cb3486e0bfc0f2a393a9addddfd5557463a932b52fdfcf68ad2a619020cd2c74a5fe46fbecaa8e80872f3
+  languageName: node
+  linkType: hard
+
+"dom7@npm:^4.0.4":
+  version: 4.0.4
+  resolution: "dom7@npm:4.0.4"
+  dependencies:
+    ssr-window: ^4.0.0
+  checksum: b38604f74e915b4d05b6634f9ff239a708c468180f498a28ff67f2a61233697d9bd7192703b788a24541c3591e7f1a6e83a2cbf70bc871a85e033f82e19abc31
   languageName: node
   linkType: hard
 
@@ -7591,61 +7686,6 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
-"gulp-pug-starter@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "gulp-pug-starter@workspace:."
-  dependencies:
-    "@babel/core": ^7.17.5
-    "@babel/eslint-parser": ^7.17.0
-    "@babel/preset-env": ^7.16.11
-    "@babel/register": ^7.17.0
-    babel-loader: ^8.2.3
-    bem-tools-core: bem-tools/bem-tools-core
-    bem-tools-create: bem-tools/bem-tools-create
-    browser-sync: ^2.27.7
-    del: ^6.0.0
-    dev: ^0.1.3
-    eslint: ^8.11.0
-    gulp: ^4.0.2
-    gulp-autoprefixer: ^8.0.0
-    gulp-clean-css: ^4.3.0
-    gulp-debug: ^4.0.0
-    gulp-favicons: ^3.0.0
-    gulp-group-css-media-queries: ^1.2.2
-    gulp-if: ^3.0.0
-    gulp-imagemin: ^7.1.0
-    gulp-newer: ^1.4.0
-    gulp-plumber: ^1.2.1
-    gulp-pug: ^4.0.1
-    gulp-rename: ^2.0.0
-    gulp-replace: ^1.1.3
-    gulp-sass: ^5.1.0
-    gulp-sourcemaps: ^3.0.0
-    gulp-svg-sprite: ^1.5.0
-    gulp-watch: ^5.0.1
-    gulp-webp: ^4.0.1
-    husky: ^7.0.4
-    imagemin-giflossy: ^5.1.10
-    imagemin-jpeg-recompress: ~7.0.0
-    imagemin-mozjpeg: ^9.0.0
-    imagemin-pngquant: ~9.0.0
-    imagemin-webp: ^6.0.0
-    imagemin-zopfli: ^7.0.0
-    lint-staged: ^12.3.5
-    postcss: ^8.4.8
-    postcss-scss: ^4.0.3
-    require-dir: ^1.2.0
-    sass: ^1.49.9
-    stylelint: ^14.5.3
-    stylelint-config-standard-scss: ^3.0.0
-    stylelint-order: ^5.0.0
-    stylelint-selector-bem-pattern: ^2.1.1
-    webpack: ^5.70.0
-    webpack-stream: ^7.0.0
-    yargs: ^17.3.1
-  languageName: unknown
-  linkType: soft
-
 "gulp-pug@npm:^4.0.1":
   version: 4.0.1
   resolution: "gulp-pug@npm:4.0.1"
@@ -9984,6 +10024,13 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
+"lodash.memoize@npm:^4.1.2":
+  version: 4.1.2
+  resolution: "lodash.memoize@npm:4.1.2"
+  checksum: 9ff3942feeccffa4f1fafa88d32f0d24fdc62fd15ded5a74a5f950ff5f0c6f61916157246744c620173dddf38d37095a92327d5fd3861e2063e736a5c207d089
+  languageName: node
+  linkType: hard
+
 "lodash.merge@npm:^4.6.2":
   version: 4.6.2
   resolution: "lodash.merge@npm:4.6.2"
@@ -10036,6 +10083,13 @@ bem-tools-create@bem-tools/bem-tools-create:
     lodash._reinterpolate: ^3.0.0
     lodash.escape: ^3.0.0
   checksum: 949465509ec72fb3e7c0385a2f09142896790a63bafd634ce96e865bf4f7ab22d38e5abc3aed68c3b4639894521a1672a955cf7738cbfce57aa3e1a2232d0343
+  languageName: node
+  linkType: hard
+
+"lodash.throttle@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "lodash.throttle@npm:4.1.1"
+  checksum: 129c0a28cee48b348aef146f638ef8a8b197944d4e9ec26c1890c19d9bf5a5690fe11b655c77a4551268819b32d27f4206343e30c78961f60b561b8608c8c805
   languageName: node
   linkType: hard
 
@@ -12100,6 +12154,68 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
+"prod@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "prod@workspace:."
+  dependencies:
+    "@babel/core": ^7.17.5
+    "@babel/eslint-parser": ^7.17.0
+    "@babel/preset-env": ^7.16.11
+    "@babel/register": ^7.17.0
+    "@event-calendar/core": ^0.9.0
+    "@event-calendar/interaction": ^0.9.0
+    "@event-calendar/time-grid": ^0.9.0
+    "@fullcalendar/interaction": ^5.11.0
+    air-datepicker: ^3.1.1
+    babel-loader: ^8.2.3
+    bem-tools-core: bem-tools/bem-tools-core
+    bem-tools-create: bem-tools/bem-tools-create
+    browser-sync: ^2.27.7
+    del: ^6.0.0
+    dev: ^0.1.3
+    eslint: ^8.11.0
+    gulp: ^4.0.2
+    gulp-autoprefixer: ^8.0.0
+    gulp-clean-css: ^4.3.0
+    gulp-debug: ^4.0.0
+    gulp-favicons: ^3.0.0
+    gulp-group-css-media-queries: ^1.2.2
+    gulp-if: ^3.0.0
+    gulp-imagemin: ^7.1.0
+    gulp-newer: ^1.4.0
+    gulp-plumber: ^1.2.1
+    gulp-pug: ^4.0.1
+    gulp-rename: ^2.0.0
+    gulp-replace: ^1.1.3
+    gulp-sass: ^5.1.0
+    gulp-sourcemaps: ^3.0.0
+    gulp-svg-sprite: ^1.5.0
+    gulp-watch: ^5.0.1
+    gulp-webp: ^4.0.1
+    husky: ^7.0.4
+    imagemin-giflossy: ^5.1.10
+    imagemin-jpeg-recompress: ~7.0.0
+    imagemin-mozjpeg: ^9.0.0
+    imagemin-pngquant: ~9.0.0
+    imagemin-webp: ^6.0.0
+    imagemin-zopfli: ^7.0.0
+    lint-staged: ^12.3.5
+    postcss: ^8.4.8
+    postcss-scss: ^4.0.3
+    require-dir: ^1.2.0
+    sass: ^1.49.9
+    simplebar: ^5.3.6
+    stylelint: ^14.5.3
+    stylelint-config-standard-scss: ^3.0.0
+    stylelint-order: ^5.0.0
+    stylelint-selector-bem-pattern: ^2.1.1
+    swiper: ^8.0.7
+    webpack: ^5.70.0
+    webpack-stream: ^7.0.0
+    yargs: ^17.3.1
+  languageName: unknown
+  linkType: soft
+
 "progress@npm:^1.1.8":
   version: 1.1.8
   resolution: "progress@npm:1.1.8"
@@ -13445,6 +13561,20 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
+"simplebar@npm:^5.3.6":
+  version: 5.3.6
+  resolution: "simplebar@npm:5.3.6"
+  dependencies:
+    "@juggle/resize-observer": ^3.3.1
+    can-use-dom: ^0.1.0
+    core-js: ^3.0.1
+    lodash.debounce: ^4.0.8
+    lodash.memoize: ^4.1.2
+    lodash.throttle: ^4.1.1
+  checksum: 2372119965345fe68895a0a3c747eead19ce9938a64971938bd0fd3371e63f8394518fac667cfb30dd8870c80ab5a8519e2018e20c6eb95f8f340340e3bd65ce
+  languageName: node
+  linkType: hard
+
 "slash@npm:^1.0.0":
   version: 1.0.0
   resolution: "slash@npm:1.0.0"
@@ -13801,6 +13931,13 @@ bem-tools-create@bem-tools/bem-tools-create:
     sshpk-sign: bin/sshpk-sign
     sshpk-verify: bin/sshpk-verify
   checksum: ba109f65c8e6c35133b8e6ed5576abeff8aa8d614824b7275ec3ca308f081fef483607c28d97780c1e235818b0f93ed8c8b56d0a5968d5a23fd6af57718c7597
+  languageName: node
+  linkType: hard
+
+"ssr-window@npm:^4.0.0, ssr-window@npm:^4.0.2":
+  version: 4.0.2
+  resolution: "ssr-window@npm:4.0.2"
+  checksum: df182600927f4f3225224cf8c02338ea637c9750519505bbfb9a9236741a2a7ec088386fb948bca7b447b8303d9109e7dc7672e3de041c79ac2a0e03665af7d2
   languageName: node
   linkType: hard
 
@@ -14388,6 +14525,13 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
+"svelte@npm:^3.46.6":
+  version: 3.47.0
+  resolution: "svelte@npm:3.47.0"
+  checksum: 247892585543ab0fc4781e36d5469ad0ce8afd4c6c440639cb0c99564a0b435ee0838482443665a905e11b7f500a1cf68475bec6a938b668e1e73c2e0badfc4e
+  languageName: node
+  linkType: hard
+
 "sver-compat@npm:^1.5.0":
   version: 1.5.0
   resolution: "sver-compat@npm:1.5.0"
@@ -14452,6 +14596,16 @@ bem-tools-create@bem-tools/bem-tools-create:
   bin:
     svgo: ./bin/svgo
   checksum: 28a5680a61245eb4a1603bc03459095bb01ad5ebd23e95882d886c3c81752313c0a9a9fe48dd0bcbb9a27c52e11c603640df952971573b2b550d9e15a9ee6116
+  languageName: node
+  linkType: hard
+
+"swiper@npm:^8.0.7":
+  version: 8.0.7
+  resolution: "swiper@npm:8.0.7"
+  dependencies:
+    dom7: ^4.0.4
+    ssr-window: ^4.0.2
+  checksum: 2267abda8243d56ac1c7cde0c4aa90d3b4b6029893d0909fb2fbfab22685eb99c499cde9fb101977775bf3cd0832ed69527bfac9375bd2cc768d2bcb571516d6
   languageName: node
   linkType: hard
 

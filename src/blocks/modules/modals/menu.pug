@@ -1,0 +1,47 @@
+form.modal.modal--menu
+  .modal__bg
+  .modal__panel
+    .modal__close 
+    .mobile-header
+      .mobile-header__info
+        .mobile-header__avatar 
+          img(src="./img/header/photo.png", alt="")
+          .avavatr__edit 
+            img(src="./img/header/edit.svg", alt="")
+        .mobile-header__name Константинольский К.
+    .form__wrap.form__wrap--full(data-simplebar)
+      .form__block 
+        nav.mobile-nav
+          a.mobile-nav__link.active(href="#") Мои события 
+          a.mobile-nav__link(href="#") Настроить расписание
+          a.mobile-nav__link(href="#") Группы
+          a.mobile-nav__link(href="#") Интергации
+          a.mobile-nav__link(href="#") Архив
+      .form__block
+        h3.h3.form__small-title Настройки уведомлений
+        .form__panel
+          p.t-h Уведамление на почту
+          +switcher
+        .form__panel
+          p.t-h Уведамление по СМС
+          +switcher
+        .form__panel
+          p.t-h Уведамление по PUSH
+          +switcher
+      .form__block
+        h3.h3.form__small-title Настройки уведомлений
+        .form__panel
+          p.t-h.t-medium Apple calendar
+          +btn-border('Интегрировать')
+        .form__panel
+          p.t-h.t-medium Google calendar
+          +btn-border-disabled('Интегрировать')
+      .form__block
+        h3.h3.form__small-title Общие настройкии
+        .form__panel
+          p.t-h Автоматически подтверждать события если время свободно
+          +switcher
+      .form__block 
+        +select('Часовой пояс')
+    .form__bottom
+      +btn-grdnt-disabled('Выйти')

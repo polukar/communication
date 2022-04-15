@@ -1,0 +1,32 @@
+mixin btn-grdnt(text, link)
+  if link
+    a.btn.btn--gradient(href=link)=text
+  else 
+    button.btn.btn--gradient=text
+    
+mixin btn-grdnt-disabled(text, link)
+  if link
+    a.btn.btn--gradient.disabled(href=link)=text
+  else 
+    button.btn.btn--gradient.disabled=text
+
+mixin btn-grdnt-full(text, link)
+  if link
+    a.btn.btn--gradient.btn--full(href=link)=text
+  else 
+    button.btn.btn--gradient.btn--full=text
+
+mixin btn-border(text, link)
+  if link
+    a.btn.btn--border(href=link)
+      span=text
+  else 
+    button.btn.btn--border
+      span=text
+mixin btn-border-disabled(text, link)
+  if link
+    a.btn.btn--border.disabled(href=link)
+      span=text
+  else 
+    button.btn.btn--border.disabled
+      span=text
